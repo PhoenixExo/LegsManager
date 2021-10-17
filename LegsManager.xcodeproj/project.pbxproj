@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,10 +14,52 @@
 		0C380C181FE4467200BBCB96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C380C161FE4467200BBCB96 /* LaunchScreen.storyboard */; };
 		0C380C221FE7D81100BBCB96 /* ArduinoCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C380C211FE7D81100BBCB96 /* ArduinoCommunicator.swift */; };
 		0C971C892035FD36008EEA39 /* LoadingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C971C882035FD36008EEA39 /* LoadingComponent.swift */; };
+		943A96F52393EF0E00B08108 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A96F42393EF0E00B08108 /* IntentHandler.swift */; };
+		943A96FE2393EF0E00B08108 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943A96FD2393EF0E00B08108 /* IntentsUI.framework */; };
+		943A97012393EF0E00B08108 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A97002393EF0E00B08108 /* IntentViewController.swift */; };
+		943A97042393EF0E00B08108 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943A97022393EF0E00B08108 /* MainInterface.storyboard */; };
+		943A97082393EF0E00B08108 /* siri legs intentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 943A96FB2393EF0E00B08108 /* siri legs intentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		943A970B2393EF0E00B08108 /* siri legs intents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 943A96F22393EF0E00B08108 /* siri legs intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		943A97132393F1D600B08108 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 943A97122393F1D600B08108 /* Intents.intentdefinition */; };
+		943A97142393F1D600B08108 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 943A97122393F1D600B08108 /* Intents.intentdefinition */; };
+		943A97152393F1D600B08108 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 943A97122393F1D600B08108 /* Intents.intentdefinition */; };
+		94EC183F23A3D899008A0AF5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94EC183E23A3D899008A0AF5 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		943A97062393EF0E00B08108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C380C021FE4467200BBCB96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 943A96FA2393EF0E00B08108;
+			remoteInfo = "siri legs intentsUI";
+		};
+		943A97092393EF0E00B08108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C380C021FE4467200BBCB96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 943A96F12393EF0E00B08108;
+			remoteInfo = "siri legs intents";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		943A96ED2393ED5200B08108 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				943A970B2393EF0E00B08108 /* siri legs intents.appex in Embed App Extensions */,
+				943A97082393EF0E00B08108 /* siri legs intentsUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0C380C0A1FE4467200BBCB96 /* LegsControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegsControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C380C0A1FE4467200BBCB96 /* LegsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C380C0D1FE4467200BBCB96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C380C0F1FE4467200BBCB96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C380C121FE4467200BBCB96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +68,17 @@
 		0C380C191FE4467300BBCB96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C380C211FE7D81100BBCB96 /* ArduinoCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArduinoCommunicator.swift; sourceTree = "<group>"; };
 		0C971C882035FD36008EEA39 /* LoadingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingComponent.swift; sourceTree = "<group>"; };
+		943A96DD2393E84800B08108 /* LegsControlDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LegsControlDebug.entitlements; sourceTree = "<group>"; };
+		943A96F22393EF0E00B08108 /* siri legs intents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "siri legs intents.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		943A96F42393EF0E00B08108 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		943A96F62393EF0E00B08108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		943A96FB2393EF0E00B08108 /* siri legs intentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "siri legs intentsUI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		943A96FD2393EF0E00B08108 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		943A97002393EF0E00B08108 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		943A97032393EF0E00B08108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		943A97052393EF0E00B08108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		943A97122393F1D600B08108 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		94EC183E23A3D899008A0AF5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,13 +89,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		943A96EF2393EF0E00B08108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		943A96F82393EF0E00B08108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943A96FE2393EF0E00B08108 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0C380C011FE4467200BBCB96 = {
 			isa = PBXGroup;
 			children = (
+				94EC183E23A3D899008A0AF5 /* Default-568h@2x.png */,
+				943A97122393F1D600B08108 /* Intents.intentdefinition */,
 				0C380C0C1FE4467200BBCB96 /* LegsManager */,
+				943A96F32393EF0E00B08108 /* siri legs intents */,
+				943A96FF2393EF0E00B08108 /* siri legs intentsUI */,
+				943A96FC2393EF0E00B08108 /* Frameworks */,
 				0C380C0B1FE4467200BBCB96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,7 +123,9 @@
 		0C380C0B1FE4467200BBCB96 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C380C0A1FE4467200BBCB96 /* LegsControl.app */,
+				0C380C0A1FE4467200BBCB96 /* LegsManager.app */,
+				943A96F22393EF0E00B08108 /* siri legs intents.appex */,
+				943A96FB2393EF0E00B08108 /* siri legs intentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +133,7 @@
 		0C380C0C1FE4467200BBCB96 /* LegsManager */ = {
 			isa = PBXGroup;
 			children = (
+				943A96DD2393E84800B08108 /* LegsControlDebug.entitlements */,
 				0C971C872035FD24008EEA39 /* View */,
 				0C971C852035EAF9008EEA39 /* Arduino */,
 				0C971C842035EAB0008EEA39 /* Support */,
@@ -102,6 +178,33 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		943A96F32393EF0E00B08108 /* siri legs intents */ = {
+			isa = PBXGroup;
+			children = (
+				943A96F42393EF0E00B08108 /* IntentHandler.swift */,
+				943A96F62393EF0E00B08108 /* Info.plist */,
+			);
+			path = "siri legs intents";
+			sourceTree = "<group>";
+		};
+		943A96FC2393EF0E00B08108 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				943A96FD2393EF0E00B08108 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		943A96FF2393EF0E00B08108 /* siri legs intentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				943A97002393EF0E00B08108 /* IntentViewController.swift */,
+				943A97022393EF0E00B08108 /* MainInterface.storyboard */,
+				943A97052393EF0E00B08108 /* Info.plist */,
+			);
+			path = "siri legs intentsUI";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,15 +215,52 @@
 				0C380C061FE4467200BBCB96 /* Sources */,
 				0C380C071FE4467200BBCB96 /* Frameworks */,
 				0C380C081FE4467200BBCB96 /* Resources */,
+				943A96ED2393ED5200B08108 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				943A97072393EF0E00B08108 /* PBXTargetDependency */,
+				943A970A2393EF0E00B08108 /* PBXTargetDependency */,
+			);
+			name = LegsManager;
+			productName = BluetoothTest;
+			productReference = 0C380C0A1FE4467200BBCB96 /* LegsManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		943A96F12393EF0E00B08108 /* siri legs intents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 943A970F2393EF0E00B08108 /* Build configuration list for PBXNativeTarget "siri legs intents" */;
+			buildPhases = (
+				943A96EE2393EF0E00B08108 /* Sources */,
+				943A96EF2393EF0E00B08108 /* Frameworks */,
+				943A96F02393EF0E00B08108 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LegsManager;
-			productName = BluetoothTest;
-			productReference = 0C380C0A1FE4467200BBCB96 /* LegsControl.app */;
-			productType = "com.apple.product-type.application";
+			name = "siri legs intents";
+			productName = "siri legs intents";
+			productReference = 943A96F22393EF0E00B08108 /* siri legs intents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		943A96FA2393EF0E00B08108 /* siri legs intentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 943A970C2393EF0E00B08108 /* Build configuration list for PBXNativeTarget "siri legs intentsUI" */;
+			buildPhases = (
+				943A96F72393EF0E00B08108 /* Sources */,
+				943A96F82393EF0E00B08108 /* Frameworks */,
+				943A96F92393EF0E00B08108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "siri legs intentsUI";
+			productName = "siri legs intentsUI";
+			productReference = 943A96FB2393EF0E00B08108 /* siri legs intentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -128,7 +268,7 @@
 		0C380C021FE4467200BBCB96 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Alexander Popov";
 				TargetAttributes = {
@@ -141,10 +281,16 @@
 							};
 						};
 					};
+					943A96F12393EF0E00B08108 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					943A96FA2393EF0E00B08108 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 0C380C051FE4467200BBCB96 /* Build configuration list for PBXProject "LegsManager" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -157,6 +303,8 @@
 			projectRoot = "";
 			targets = (
 				0C380C091FE4467200BBCB96 /* LegsManager */,
+				943A96F12393EF0E00B08108 /* siri legs intents */,
+				943A96FA2393EF0E00B08108 /* siri legs intentsUI */,
 			);
 		};
 /* End PBXProject section */
@@ -167,8 +315,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C380C181FE4467200BBCB96 /* LaunchScreen.storyboard in Resources */,
+				94EC183F23A3D899008A0AF5 /* Default-568h@2x.png in Resources */,
 				0C380C151FE4467200BBCB96 /* Assets.xcassets in Resources */,
 				0C380C131FE4467200BBCB96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		943A96F02393EF0E00B08108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		943A96F92393EF0E00B08108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943A97042393EF0E00B08108 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,11 +346,43 @@
 				0C380C101FE4467200BBCB96 /* ViewController.swift in Sources */,
 				0C971C892035FD36008EEA39 /* LoadingComponent.swift in Sources */,
 				0C380C0E1FE4467200BBCB96 /* AppDelegate.swift in Sources */,
+				943A97132393F1D600B08108 /* Intents.intentdefinition in Sources */,
 				0C380C221FE7D81100BBCB96 /* ArduinoCommunicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		943A96EE2393EF0E00B08108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943A97142393F1D600B08108 /* Intents.intentdefinition in Sources */,
+				943A96F52393EF0E00B08108 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		943A96F72393EF0E00B08108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943A97152393F1D600B08108 /* Intents.intentdefinition in Sources */,
+				943A97012393EF0E00B08108 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		943A97072393EF0E00B08108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 943A96FA2393EF0E00B08108 /* siri legs intentsUI */;
+			targetProxy = 943A97062393EF0E00B08108 /* PBXContainerItemProxy */;
+		};
+		943A970A2393EF0E00B08108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 943A96F12393EF0E00B08108 /* siri legs intents */;
+			targetProxy = 943A97092393EF0E00B08108 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0C380C111FE4467200BBCB96 /* Main.storyboard */ = {
@@ -203,6 +399,14 @@
 				0C380C171FE4467200BBCB96 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		943A97022393EF0E00B08108 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				943A97032393EF0E00B08108 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -314,7 +518,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -322,15 +527,20 @@
 		0C380C1D1FE4467300BBCB96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LegsManager/LegsControlDebug.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U494C676MJ;
-				INFOPLIST_FILE = "$(SRCROOT)/BluetoothTest/Support/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.developer.arduinolegs;
-				PRODUCT_NAME = LegsControl;
+				DEVELOPMENT_TEAM = ZHPRFC85DT;
+				INFOPLIST_FILE = "$(SRCROOT)/LegsManager/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gofiercely.leg-manager";
+				PRODUCT_NAME = LegsManager;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -340,17 +550,115 @@
 		0C380C1E1FE4467300BBCB96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U494C676MJ;
-				INFOPLIST_FILE = "$(SRCROOT)/BluetoothTest/Support/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.developer.arduinolegs;
-				PRODUCT_NAME = LegsControl;
+				INFOPLIST_FILE = "$(SRCROOT)/LegsManager/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gofiercely.leg-manager";
+				PRODUCT_NAME = LegsManager;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		943A970D2393EF0E00B08108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHPRFC85DT;
+				INFOPLIST_FILE = "siri legs intentsUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gofiercely.leg-manager.intents-ui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		943A970E2393EF0E00B08108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U494C676MJ;
+				INFOPLIST_FILE = "siri legs intentsUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.siri-legs-intentsUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		943A97102393EF0E00B08108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZHPRFC85DT;
+				INFOPLIST_FILE = "siri legs intents/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gofiercely.leg-manager.intents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		943A97112393EF0E00B08108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U494C676MJ;
+				INFOPLIST_FILE = "siri legs intents/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.siri-legs-intents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -372,6 +680,24 @@
 			buildConfigurations = (
 				0C380C1D1FE4467300BBCB96 /* Debug */,
 				0C380C1E1FE4467300BBCB96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		943A970C2393EF0E00B08108 /* Build configuration list for PBXNativeTarget "siri legs intentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943A970D2393EF0E00B08108 /* Debug */,
+				943A970E2393EF0E00B08108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		943A970F2393EF0E00B08108 /* Build configuration list for PBXNativeTarget "siri legs intents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943A97102393EF0E00B08108 /* Debug */,
+				943A97112393EF0E00B08108 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

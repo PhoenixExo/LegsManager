@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 import CoreBluetooth
 
 final class ViewController: UIViewController {
@@ -27,6 +28,17 @@ final class ViewController: UIViewController {
     @IBOutlet weak var btnSeatRight: UIButton!
     @IBOutlet weak var btnSeatLeft: UIButton!
     @IBOutlet weak var btnWalkRight: UIButton!
+    
+    
+    
+       override func viewDidLoad() {
+           super.viewDidLoad()
+           
+          INPreferences.requestSiriAuthorization { (status) in
+              
+          }
+           
+       }
     // MARK: - View Controller Life Cycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
